@@ -1,0 +1,199 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Assets/Objects/Circle-icon.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/ParallaxBackground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scenes/tileset.tres" type="TileSet" id=8]
+[ext_resource path="res://Scenes/main.gd" type="Script" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 21
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+outline_color = Color( 0.690196, 0.0235294, 0.0235294, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 21
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 21
+font_data = ExtResource( 3 )
+
+[node name="main2" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 8 )
+format = 1
+tile_data = PoolIntArray( 262255, 0, 0, 262256, 0, 0, 262270, 0, 0, 262271, 0, 0, 327789, 0, 0, 327790, 0, 0, 327791, 0, 0, 327792, 0, 0, 327806, 0, 0, 327807, 0, 0, 327808, 0, 0, 327809, 0, 0, 393323, 0, 0, 393324, 0, 0, 393325, 0, 0, 393326, 0, 0, 393327, 0, 0, 393328, 0, 0, 393342, 0, 0, 393343, 0, 0, 393344, 0, 0, 393345, 0, 0, 393346, 0, 0, 393347, 0, 0, 458857, 0, 0, 458858, 0, 0, 458859, 0, 0, 458860, 0, 0, 458861, 0, 0, 458862, 0, 0, 458863, 0, 0, 458864, 0, 0, 458878, 0, 0, 458879, 0, 0, 458880, 0, 0, 458881, 0, 0, 458882, 0, 0, 458883, 0, 0, 458884, 0, 0, 458885, 0, 0, 524391, 0, 0, 524392, 0, 0, 524393, 0, 0, 524394, 0, 0, 524395, 0, 0, 524396, 0, 0, 524397, 0, 0, 524398, 0, 0, 524399, 0, 0, 524400, 0, 0, 524414, 0, 0, 524415, 0, 0, 524416, 0, 0, 524417, 0, 0, 524418, 0, 0, 524419, 0, 0, 524420, 0, 0, 524421, 0, 0, 524422, 0, 0, 524423, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589854, 0, 0, 589855, 0, 0, 589856, 0, 0, 589857, 0, 0, 589858, 0, 0, 589859, 0, 0, 589860, 0, 0, 589861, 0, 0, 589862, 0, 0, 589863, 0, 0, 589864, 0, 0, 589865, 0, 0, 589866, 0, 0, 589867, 0, 0, 589868, 0, 0, 589869, 0, 0, 589870, 0, 0, 589871, 0, 0, 589872, 0, 0, 589873, 0, 0, 589874, 0, 0, 589875, 0, 0, 589876, 0, 0, 589877, 0, 0, 589878, 0, 0, 589879, 0, 0, 589880, 0, 0, 589881, 0, 0, 589882, 0, 0, 589883, 0, 0, 589884, 0, 0, 589885, 0, 0, 589886, 0, 0, 589887, 0, 0, 589888, 0, 0, 589889, 0, 0, 589890, 0, 0, 589891, 0, 0, 589892, 0, 0, 589893, 0, 0, 589894, 0, 0, 589895, 0, 0, 589896, 0, 0, 589897, 0, 0, 589899, 0, 0, 589900, 0, 0, 589901, 0, 0, 589902, 0, 0, 589903, 0, 0, 589906, 0, 0, 589907, 0, 0, 589908, 0, 0, 589909, 0, 0, 589910, 0, 0, 589911, 0, 0, 589912, 0, 0, 589913, 0, 0, 589914, 0, 0, 589915, 0, 0, 589916, 0, 0, 589917, 0, 0, 589918, 0, 0, 589919, 0, 0, 589920, 0, 0, 589921, 0, 0, 589922, 0, 0, 589923, 0, 0, 589924, 0, 0, 589925, 0, 0, 589926, 0, 0, 589927, 0, 0, 589928, 0, 0, 589929, 0, 0, 589930, 0, 0, 589931, 0, 0, 589932, 0, 0, 589933, 0, 0, 589934, 0, 0, 589935, 0, 0, 589936, 0, 0, 589937, 0, 0, 589938, 0, 0, 589939, 0, 0, 589940, 0, 0, 589946, 0, 0, 589947, 0, 0, 589948, 0, 0, 589949, 0, 0, 589950, 0, 0, 589951, 0, 0, 589952, 0, 0, 589953, 0, 0, 589954, 0, 0, 589955, 0, 0, 589956, 0, 0, 589957, 0, 0, 589958, 0, 0, 589959, 0, 0, 589960, 0, 0, 589961, 0, 0, 589962, 0, 0, 589963, 0, 0, 589964, 0, 0, 589965, 0, 0, 589966, 0, 0, 589967, 0, 0, 589968, 0, 0, 589969, 0, 0, 589970, 0, 0, 589971, 0, 0, 589972, 0, 0, 589973, 0, 0, 589974, 0, 0, 589975, 0, 0, 589976, 0, 0, 589977, 0, 0, 589978, 0, 0, 589979, 0, 0, 589980, 0, 0, 589981, 0, 0, 589982, 0, 0, 589983, 0, 0 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 2 )]
+
+[node name="GUI" type="CanvasLayer" parent="." groups=[
+"gui",
+]]
+
+[node name="Title" type="Label" parent="."]
+margin_top = 64.0
+margin_right = 592.0
+margin_bottom = 203.0
+custom_fonts/font = SubResource( 1 )
+text = "Profile"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_1" type="Label" parent="."]
+margin_left = 8.0
+margin_top = 256.0
+margin_right = 200.0
+margin_bottom = 281.0
+custom_fonts/font = SubResource( 2 )
+text = "Name:"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit_1" type="LineEdit" parent="."]
+margin_left = 219.0
+margin_top = 247.0
+margin_right = 529.0
+margin_bottom = 287.0
+custom_fonts/font = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_2" type="Label" parent="."]
+margin_left = 8.0
+margin_top = 329.0
+margin_right = 200.0
+margin_bottom = 354.0
+custom_fonts/font = SubResource( 2 )
+text = "Age:"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit_2" type="LineEdit" parent="."]
+margin_left = 219.0
+margin_top = 320.0
+margin_right = 529.0
+margin_bottom = 360.0
+custom_fonts/font = SubResource( 3 )
+max_length = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_3" type="Label" parent="."]
+margin_left = 8.0
+margin_top = 401.0
+margin_right = 200.0
+margin_bottom = 426.0
+custom_fonts/font = SubResource( 2 )
+text = "Address:"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit_3" type="LineEdit" parent="."]
+margin_left = 219.0
+margin_top = 392.0
+margin_right = 529.0
+margin_bottom = 432.0
+custom_fonts/font = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="notification" type="Label" parent="."]
+margin_left = 8.0
+margin_top = 488.0
+margin_right = 529.0
+margin_bottom = 528.0
+custom_fonts/font = SubResource( 4 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 352.0
+margin_top = 570.0
+margin_right = 528.0
+margin_bottom = 605.0
+custom_fonts/font = SubResource( 5 )
+text = "Confirm"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="content" type="Label" parent="."]
+margin_left = 640.0
+margin_top = 256.0
+margin_right = 896.0
+margin_bottom = 304.0
+custom_fonts/font = SubResource( 6 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="content2" type="Label" parent="."]
+margin_left = 568.0
+margin_top = 344.0
+margin_right = 967.0
+margin_bottom = 392.0
+custom_fonts/font = SubResource( 6 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="content3" type="Label" parent="."]
+margin_left = 640.0
+margin_top = 408.0
+margin_right = 896.0
+margin_bottom = 456.0
+custom_fonts/font = SubResource( 6 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 688.0
+margin_top = 56.0
+margin_right = 1200.0
+margin_bottom = 568.0
+rect_scale = Vector2( 0.324846, 0.31162 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]

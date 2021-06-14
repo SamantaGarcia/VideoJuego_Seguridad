@@ -1,0 +1,73 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/Sky.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Clouds.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Background/6Clouds.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Background/7Sky.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Background/Green.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Background/5Mountains.png" type="Texture" id=6]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="Sky" type="ParallaxLayer" parent="."]
+position = Vector2( 0, 80 )
+motion_scale = Vector2( 0.2, 1 )
+motion_mirroring = Vector2( 1045, 0 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Sky"]
+position = Vector2( 512.774, 127.594 )
+scale = Vector2( 6.54182, 8.3329 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Clouds" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 1000, 0 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Clouds"]
+position = Vector2( 471.198, 85.4297 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 3 )
+flip_h = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Mountains" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.4, 1 )
+motion_mirroring = Vector2( 1020, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Mountains"]
+position = Vector2( 515.248, 341.719 )
+scale = Vector2( 6.41471, 6.4 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="trees2" type="ParallaxLayer" parent="."]
+position = Vector2( -24.5407, -22.653 )
+motion_mirroring = Vector2( 1030, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="trees2"]
+position = Vector2( 528, 488 )
+scale = Vector2( 6.58043, 7.37535 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
