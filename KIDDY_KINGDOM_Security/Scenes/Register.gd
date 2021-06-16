@@ -28,3 +28,7 @@ func _on_register_pressed():
 		return
 		
 	Firebase.register(email.text, password.text, http)
+
+
+func _on_LinkButton_pressed():
+	get_tree().change_scene("res://Scenes/Welcome.tscn")

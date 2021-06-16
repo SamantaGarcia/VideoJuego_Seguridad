@@ -64,3 +64,7 @@ func set_profile(value: Dictionary) -> void:
 	content2.text = "Your content is for"
 	content3.text = profile.type.stringValue
 	
+
+
+func _on_leave_pressed():
+	get_tree().change_scene("res://Scenes/Welcome.tscn")

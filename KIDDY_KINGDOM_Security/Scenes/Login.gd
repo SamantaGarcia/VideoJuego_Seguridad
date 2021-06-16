@@ -23,3 +23,7 @@ func _on_HTTPRequest_request_completed(result, response_code, headers, body):
 
 func _on_LinkButton_pressed():
 	get_tree().change_scene("res://Scenes/Register.tscn")
+
+
+func _on_return_pressed():
+	get_tree().change_scene("res://Scenes/Welcome.tscn")
